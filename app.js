@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const { models: { Artist }} = require('./db');
+const { models: { Artist, Song, Album, Track }} = require('./db');
 
 
 app.use('/dist', express.static(path.join(__dirname, 'dist')));
